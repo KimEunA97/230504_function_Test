@@ -1,4 +1,4 @@
-function createTag(tagName, props = {}, textContent = '') {
+function createTag(tagName, props, textContent = '') {
   const element = document.createElement(tagName);
 
   if (props) {
@@ -17,6 +17,9 @@ function createTag(tagName, props = {}, textContent = '') {
 
 const root = document.getElementById('root');
 
-const asd = { style: { width: "100px" } };
+const asd = { width: "100px" };
 const div = createTag('div', asd, "asdsad");
 root.append(div);
+
+const div1 = createTag('div', { style: "background-color : blue" } );
+root.appendChild(div1);
