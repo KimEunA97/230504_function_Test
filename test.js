@@ -21,6 +21,10 @@ const asd = { width: "100px" };
 const div = createTag('div', asd, "asdsad");
 root.append(div);
 
-const div1 = createTag('div', { style: { backgroundColor: 'blue', color: 'white' } }, 'asd');
+// const div1 = createTag('div', { style: { backgroundColor: 'blue', color: 'white' } }, 'asd');
+// const div1 = createTag('div', { style: { backgroundColor: 'blue', color: 'white' } }, 'asd');
+const div1 = createTag('div', { style: 'background-color: blue; color: white;' }, 'asd');
+
+
 
 root.appendChild(div1);
